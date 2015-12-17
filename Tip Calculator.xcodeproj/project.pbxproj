@@ -12,7 +12,59 @@
 		320A77BD1C02F45F00AAF72C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320A77BB1C02F45F00AAF72C /* Main.storyboard */; };
 		320A77BF1C02F45F00AAF72C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320A77BE1C02F45F00AAF72C /* Assets.xcassets */; };
 		320A77C21C02F45F00AAF72C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320A77C01C02F45F00AAF72C /* LaunchScreen.storyboard */; };
+		320A77CF1C02F4A300AAF72C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320A77CD1C02F4A300AAF72C /* Interface.storyboard */; };
+		320A77D11C02F4A300AAF72C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320A77D01C02F4A300AAF72C /* Assets.xcassets */; };
+		320A77D81C02F4A300AAF72C /* Tip Calculator Apple Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 320A77D71C02F4A300AAF72C /* Tip Calculator Apple Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		320A77DF1C02F4A300AAF72C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A77DE1C02F4A300AAF72C /* InterfaceController.swift */; };
+		320A77E11C02F4A300AAF72C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A77E01C02F4A300AAF72C /* ExtensionDelegate.swift */; };
+		320A77E31C02F4A300AAF72C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A77E21C02F4A300AAF72C /* NotificationController.swift */; };
+		320A77E51C02F4A300AAF72C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320A77E41C02F4A300AAF72C /* Assets.xcassets */; };
+		320A77E91C02F4A300AAF72C /* Tip Calculator Apple Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 320A77CB1C02F4A300AAF72C /* Tip Calculator Apple Watch.app */; };
+		3224A61E1C1FF35B004788A8 /* Tip Calculator Apple Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 320A77CB1C02F4A300AAF72C /* Tip Calculator Apple Watch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		320A77D91C02F4A300AAF72C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A77AC1C02F45F00AAF72C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 320A77D61C02F4A300AAF72C;
+			remoteInfo = "Tip Calculator Apple Watch Extension";
+		};
+		320A77E71C02F4A300AAF72C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A77AC1C02F45F00AAF72C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 320A77CA1C02F4A300AAF72C;
+			remoteInfo = "Tip Calculator Apple Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		320A77ED1C02F4A300AAF72C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				320A77D81C02F4A300AAF72C /* Tip Calculator Apple Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320A77F11C02F4A300AAF72C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				320A77E91C02F4A300AAF72C /* Tip Calculator Apple Watch.app in Embed Watch Content */,
+				3224A61E1C1FF35B004788A8 /* Tip Calculator Apple Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		320A77B41C02F45F00AAF72C /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +74,28 @@
 		320A77BE1C02F45F00AAF72C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320A77C11C02F45F00AAF72C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320A77C31C02F45F00AAF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A77CB1C02F4A300AAF72C /* Tip Calculator Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		320A77CE1C02F4A300AAF72C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		320A77D01C02F4A300AAF72C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		320A77D21C02F4A300AAF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A77D71C02F4A300AAF72C /* Tip Calculator Apple Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tip Calculator Apple Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		320A77DD1C02F4A300AAF72C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		320A77DE1C02F4A300AAF72C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		320A77E01C02F4A300AAF72C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		320A77E21C02F4A300AAF72C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		320A77E41C02F4A300AAF72C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		320A77E61C02F4A300AAF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		320A77B11C02F45F00AAF72C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320A77D41C02F4A300AAF72C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				320A77B61C02F45F00AAF72C /* Tip Calculator */,
+				320A77CC1C02F4A300AAF72C /* Tip Calculator Apple Watch */,
+				320A77DB1C02F4A300AAF72C /* Tip Calculator Apple Watch Extension */,
 				320A77B51C02F45F00AAF72C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				320A77B41C02F45F00AAF72C /* Tip Calculator.app */,
+				320A77CB1C02F4A300AAF72C /* Tip Calculator Apple Watch.app */,
+				320A77D71C02F4A300AAF72C /* Tip Calculator Apple Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +138,37 @@
 			path = "Tip Calculator";
 			sourceTree = "<group>";
 		};
+		320A77CC1C02F4A300AAF72C /* Tip Calculator Apple Watch */ = {
+			isa = PBXGroup;
+			children = (
+				320A77CD1C02F4A300AAF72C /* Interface.storyboard */,
+				320A77D01C02F4A300AAF72C /* Assets.xcassets */,
+				320A77D21C02F4A300AAF72C /* Info.plist */,
+			);
+			path = "Tip Calculator Apple Watch";
+			sourceTree = "<group>";
+		};
+		320A77DB1C02F4A300AAF72C /* Tip Calculator Apple Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				320A77DE1C02F4A300AAF72C /* InterfaceController.swift */,
+				320A77E01C02F4A300AAF72C /* ExtensionDelegate.swift */,
+				320A77E21C02F4A300AAF72C /* NotificationController.swift */,
+				320A77E41C02F4A300AAF72C /* Assets.xcassets */,
+				320A77E61C02F4A300AAF72C /* Info.plist */,
+				320A77DC1C02F4A300AAF72C /* Supporting Files */,
+			);
+			path = "Tip Calculator Apple Watch Extension";
+			sourceTree = "<group>";
+		};
+		320A77DC1C02F4A300AAF72C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				320A77DD1C02F4A300AAF72C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +179,51 @@
 				320A77B01C02F45F00AAF72C /* Sources */,
 				320A77B11C02F45F00AAF72C /* Frameworks */,
 				320A77B21C02F45F00AAF72C /* Resources */,
+				320A77F11C02F4A300AAF72C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				320A77E81C02F4A300AAF72C /* PBXTargetDependency */,
 			);
 			name = "Tip Calculator";
 			productName = "Tip Calculator";
 			productReference = 320A77B41C02F45F00AAF72C /* Tip Calculator.app */;
 			productType = "com.apple.product-type.application";
+		};
+		320A77CA1C02F4A300AAF72C /* Tip Calculator Apple Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320A77EE1C02F4A300AAF72C /* Build configuration list for PBXNativeTarget "Tip Calculator Apple Watch" */;
+			buildPhases = (
+				320A77C91C02F4A300AAF72C /* Resources */,
+				320A77ED1C02F4A300AAF72C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				320A77DA1C02F4A300AAF72C /* PBXTargetDependency */,
+			);
+			name = "Tip Calculator Apple Watch";
+			productName = "Tip Calculator Apple Watch";
+			productReference = 320A77CB1C02F4A300AAF72C /* Tip Calculator Apple Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		320A77D61C02F4A300AAF72C /* Tip Calculator Apple Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320A77EA1C02F4A300AAF72C /* Build configuration list for PBXNativeTarget "Tip Calculator Apple Watch Extension" */;
+			buildPhases = (
+				320A77D31C02F4A300AAF72C /* Sources */,
+				320A77D41C02F4A300AAF72C /* Frameworks */,
+				320A77D51C02F4A300AAF72C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tip Calculator Apple Watch Extension";
+			productName = "Tip Calculator Apple Watch Extension";
+			productReference = 320A77D71C02F4A300AAF72C /* Tip Calculator Apple Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +236,12 @@
 				ORGANIZATIONNAME = "David Thurman";
 				TargetAttributes = {
 					320A77B31C02F45F00AAF72C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					320A77CA1C02F4A300AAF72C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					320A77D61C02F4A300AAF72C = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
@@ -113,6 +260,8 @@
 			projectRoot = "";
 			targets = (
 				320A77B31C02F45F00AAF72C /* Tip Calculator */,
+				320A77CA1C02F4A300AAF72C /* Tip Calculator Apple Watch */,
+				320A77D61C02F4A300AAF72C /* Tip Calculator Apple Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +277,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		320A77C91C02F4A300AAF72C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A77D11C02F4A300AAF72C /* Assets.xcassets in Resources */,
+				320A77CF1C02F4A300AAF72C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320A77D51C02F4A300AAF72C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A77E51C02F4A300AAF72C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +306,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		320A77D31C02F4A300AAF72C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A77E31C02F4A300AAF72C /* NotificationController.swift in Sources */,
+				320A77E11C02F4A300AAF72C /* ExtensionDelegate.swift in Sources */,
+				320A77DF1C02F4A300AAF72C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		320A77DA1C02F4A300AAF72C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 320A77D61C02F4A300AAF72C /* Tip Calculator Apple Watch Extension */;
+			targetProxy = 320A77D91C02F4A300AAF72C /* PBXContainerItemProxy */;
+		};
+		320A77E81C02F4A300AAF72C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 320A77CA1C02F4A300AAF72C /* Tip Calculator Apple Watch */;
+			targetProxy = 320A77E71C02F4A300AAF72C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		320A77BB1C02F45F00AAF72C /* Main.storyboard */ = {
@@ -157,6 +346,14 @@
 				320A77C11C02F45F00AAF72C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		320A77CD1C02F4A300AAF72C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				320A77CE1C02F4A300AAF72C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidthurman.tipcalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -260,8 +457,68 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidthurman.tipcalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		320A77EB1C02F4A300AAF72C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tip Calculator Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		320A77EC1C02F4A300AAF72C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tip Calculator Apple Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		320A77EF1C02F4A300AAF72C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tip_Calculator_Apple_Watch_Extension;
+				INFOPLIST_FILE = "Tip Calculator Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		320A77F01C02F4A300AAF72C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tip_Calculator_Apple_Watch_Extension;
+				INFOPLIST_FILE = "Tip Calculator Apple Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -284,6 +541,25 @@
 				320A77C81C02F45F00AAF72C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320A77EA1C02F4A300AAF72C /* Build configuration list for PBXNativeTarget "Tip Calculator Apple Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320A77EB1C02F4A300AAF72C /* Debug */,
+				320A77EC1C02F4A300AAF72C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320A77EE1C02F4A300AAF72C /* Build configuration list for PBXNativeTarget "Tip Calculator Apple Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320A77EF1C02F4A300AAF72C /* Debug */,
+				320A77F01C02F4A300AAF72C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
